@@ -7,7 +7,21 @@
 		{
 			"Name": "CodeStoryTast",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"UMGEditor"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ElectraPlayer",
+			"Enabled": true
+		},
+		{
+			"Name": "PixelStreaming",
+			"Enabled": true
 		}
 	]
 }

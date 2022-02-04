@@ -28,6 +28,54 @@
 			"Type": "Executable"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraPlayer/Binaries/Win64/UE4Editor-ElectraPlayerRuntime.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraPlayer/Binaries/Win64/UE4Editor-ElectraPlayerPlugin.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraPlayer/Binaries/Win64/UE4Editor-ElectraPlayerFactory.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraUtil/Binaries/Win64/UE4Editor-ElectraBase.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraUtil/Binaries/Win64/UE4Editor-ElectraSamples.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraCDM/Binaries/Win64/UE4Editor-ElectraCDM.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/PixelStreaming/Binaries/Win64/UE4Editor-PixelStreaming.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMedia.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/HardwareEncoders/Binaries/Win64/UE4Editor-EncoderAMF.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/HardwareEncoders/Binaries/Win64/UE4Editor-EncoderNVENC.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -565,18 +613,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Media/MediaPlayerEditor/Binaries/Win64/UE4Editor-MediaPlayerEditor.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMedia.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaEditor.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
@@ -2284,6 +2320,10 @@
 			"Type": "DynamicLibrary"
 		},
 		{
+			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-WebSockets.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-InputDevice.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -2365,6 +2405,30 @@
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor.version",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraPlayer/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraUtil/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraCDM/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/PixelStreaming/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/HardwareEncoders/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -2668,10 +2732,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/MeshPainting/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2851,6 +2911,30 @@
 	"RuntimeDependencies": [
 		{
 			"Path": "$(ProjectDir)/CodeStoryTast.uproject",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraPlayer/ElectraPlayer.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraUtil/ElectraUtil.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/ElectraCDM/ElectraCDM.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/PixelStreaming/PixelStreaming.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/WmfMedia.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Media/HardwareEncoders/HardwareEncoders.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -3158,10 +3242,6 @@
 			"Type": "UFS"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Media/WmfMedia/WmfMedia.uplugin",
-			"Type": "UFS"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/MeshPainting/MeshPainting.uplugin",
 			"Type": "UFS"
 		},
@@ -3328,6 +3408,250 @@
 		{
 			"Path": "$(EngineDir)/Plugins/XGEController/XGEController.uplugin",
 			"Type": "UFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\cirrus.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\config.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\package-lock.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\package.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\images\\favicon-16x16.png",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\images\\favicon-32x32.png",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\images\\favicon-96x96.png",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\images\\favicon.ico",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\images\\Play.png",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\modules\\config.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\modules\\httpsClient.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\modules\\logging.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\modules\\authentication\\index.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\modules\\authentication\\init.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\modules\\authentication\\db\\index.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\modules\\authentication\\db\\store_password.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\modules\\authentication\\db\\users.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\bash\\README.txt",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\bash\\run_local.sh",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\bash\\setup.sh",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\bash\\Start_Common.sh",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\bash\\Start_SignallingServer.sh",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\bash\\Start_TURNServer.sh",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\bash\\Start_WithTURN_SignallingServer.sh",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\cmd\\README.txt",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\cmd\\run_local.bat",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\cmd\\setup.ps1",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\cmd\\Start_Common.ps1",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\cmd\\Start_SignallingServer.ps1",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\cmd\\Start_TURNServer.ps1",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\platform_scripts\\cmd\\Start_WithTURN_SignallingServer.ps1",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\scripts\\app.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\scripts\\stressTest.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\scripts\\webRtcPlayer.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\bcrypt-js.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\Bootstrap.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\Express.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\expression-session.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\FontAwesome.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\Helmet.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\JQuery.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\passport-local.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\passport.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\Popper.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\Socket.io.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\WebRTCadapter.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\WS.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\tps\\Yargs.tps",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\www\\login.css",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\www\\login.html",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\www\\player.css",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\www\\player.html",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\SignallingWebServer\\www\\stresstest.html",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\Matchmaker\\config.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\Matchmaker\\matchmaker.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\Matchmaker\\package-lock.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\Matchmaker\\package.json",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\Matchmaker\\run.bat",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\Matchmaker\\setup.bat",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\Matchmaker\\modules\\config.js",
+			"Type": "NonUFS"
+		},
+		{
+			"Path": "C:\\Program Files\\Epic Games\\UE_4.27\\Samples\\PixelStreaming\\WebServers\\Matchmaker\\modules\\logging.js",
+			"Type": "NonUFS"
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/ThirdParty/svn/Win64/apr_crypto_openssl-1.dll",
